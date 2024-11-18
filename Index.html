@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar"></div>
+
+    <div class="content">
+        <h1>Tic-Tac-Toe!</h1>
+        <div class="separator"></div>
+        <div class="players">
+            <button class="game-mode singleplayer">Singleplayer</button>
+            <button class="game-mode multiplayer">Multiplayer</button>
+        </div>
+
+        <div class="players players-information singleplayer-information">
+            <div class="player-form">
+                <label for="player-name">Player's Name: </label>
+                <input type="text" id="player-name" name="player-name">
+                <div class="separator"></div>
+                <input type="radio" id="symbol-X" name="symbol">
+                <label for="symbol-X">X</label>
+                <div class="xo-separator"></div>
+                <input type="radio" id="symbol-O" name="symbol">
+                <label for="symbol-O">O</label>
+                <button class="game-mode">Start</button>
+            </div>
+        </div>
+
+        <div class="players players-information multiplayer-information">
+            <div class="player-form">
+                <label for="player-name-X">Player X's Name: </label>
+                <input type="text" id="player-name-X" name="player-name-X">
+            </div>
+            <div class="player-form">
+                <label for="player-name-O">Player O's Name: </label>
+                <input type="text" id="player-name-O" name="player-name-O">
+                <button class="game-mode">Start</button>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="player-container"></div>
+            <div class="grid">
+                <button class="00"></button>
+                <button class="01"></button>
+                <button class="02"></button>
+                <button class="10"></button>
+                <button class="11"></button>
+                <button class="12"></button>
+                <button class="20"></button>
+                <button class="21"></button>
+                <button class="22"></button>
+            </div>
+            <div class="player-container"></div>
+        </div>
+
+        <div class="results">
+            <div class="result"></div>
+            <button class="restart game-mode">Restart</button>
+        </div>
+    </div>
+
+    <div class="sidebar"></div>
+</body>
+</html>
